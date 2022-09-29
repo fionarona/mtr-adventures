@@ -1,0 +1,146 @@
+body{
+  padding-top: 5px;
+  margin: auto;
+  background-color: #F5E8FF;
+}
+
+h3{
+  display: none;
+  position: absolute;
+  z-index: 9000;
+  font-weight: 700;
+  left: 500px;
+  top: 100px;
+  margin: 0;
+  background-color: white;
+  font-size: 160px !important;
+  font-family: fantasy;
+  color: #CDB5E1;
+  padding-bottom: 5px;
+}
+.opening-body{
+  z-index: 100;
+  padding-left: 500;
+  position: relative;
+}
+.intro{
+  z-index: 800;
+  position: absolute;
+  left: 300px;
+  top: 300px;
+}
+.gameOver{
+  display: none;
+  z-index: 800;
+  position: absolute;
+  left: 300px;
+  top: 300px
+}
+h1{
+  text-align: center;
+  font-family: Verdana, Arial, sans-serif;
+  color: navy;
+  margin-bottom: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2{
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  font-family: fantasy;
+  color: navy;
+  padding-bottom: 5px;
+}
+.this-hurts{
+  z-index: 500;
+  position: absolute;
+  width: 900px;
+  height: auto;
+  top: 100;
+  border-radius: 5%;
+  border: #CDB5E1 solid 5px;
+  left: 300px
+}
+.benny{
+  z-index: 3000;
+  position: absolute;
+  width: 300px;
+  top: 200px;
+  left: 800px;
+
+}
+.sky{
+  display: none;
+  z-index:900;
+  position: absolute;
+  height: 350px;
+  top: 120px;
+  overflow: hidden;
+  animation: moving 3s infinite linear;
+}
+.windows{
+  display: none;
+  z-index: 1000;
+  position: absolute;
+  height: 350px;
+  left: 280px;
+  top: 120px;
+  border: solid plum 4px;
+}
+.grid{
+  z-index: 901;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  left: 250px;
+  top: 200px;
+  width: 1000px;
+  height: 300px;
+}
+.squares{
+  z-index: 902;
+  height: 100px;
+  width: 100px;
+}
+
+.mole{
+  background-image: url(/unit-1/mtr-adventures/images/bennyhead.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.sally{
+  background-image: url(/unit-1/mtr-adventures/images/sallyhead.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bently{
+  background-image: url(/unit-1/mtr-adventures/images/bentlyhead.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.fake-border1{
+  display: none;
+  z-index:2000;
+  position: absolute;
+  width: 280px;
+}
+.fake-border2{
+  display: none;
+  z-index: 2000;
+  position: absolute;
+  width: 280px;
+  left: 1235px
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(0, 0)
+  }
+  50% {
+    transform: translate(-150px, 0)
+  }
+  100% {
+    transform: translate(-300px, 0)
+  }
+}
