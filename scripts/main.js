@@ -12,7 +12,7 @@ const $title =$('.title')
 const $score = $('#score')
 let result = 0
 let timerId = null
-let hitPosition, sallyPosition, bentlyPosition
+let hitPosition, sallyPosition, bentlyPosition, timerId
 
 const randomSquare = () => {
   $squares.removeClass('mole')
