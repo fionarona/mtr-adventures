@@ -104,17 +104,17 @@ h2{
 }
 
 .mole{
-  background-image: url(/images/bennyhead.png);
+  background-image: url(images/bennyhead.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .sally{
-  background-image: url(/images/sallyhead.png);
+  background-image: url(images/sallyhead.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
 .bently{
-  background-image: url(/images/bentlyhead.png);
+  background-image: url(images/bentlyhead.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
