@@ -5,6 +5,7 @@ const $gameBoard = $('.grid')
 const $squares = $('.squares')
 const $mole = $('.mole')
 const $sally = $('.sally')
+const $bently = $('.bently')
 const $intro = $('.intro')
 const $gameOver = $('.gameOver')
 const $title =$('.title')
@@ -12,7 +13,7 @@ const $title =$('.title')
 const $score = $('#score')
 let result = 0
 let timerId = null
-let hitPosition, sallyPosition, bentlyPosition, timerId
+let hitPosition, sallyPosition, bentlyPosition
 
 const randomSquare = () => {
   $squares.removeClass('mole')
@@ -54,7 +55,6 @@ $benny.on('click', function(e) {
   moveMole()
 })
 
-
 $squares.on('click', function(e) {
   if ($(e.currentTarget).attr('id') == hitPosition) {
     result ++
@@ -71,15 +71,23 @@ $squares.on('click', function(e) {
   if ($(e.currentTarget).attr('id') == bentlyPosition) {
     $gameOver.show()
     $score.show()
+    $sally.hide()
+    $bently.hide()
     clearInterval(timerId)
     timerId = undefined
   }
+})
+
+$gameOver.on('click', function () {
+  location.reload(true)
 })
 
 $squares.on('click', function(e) {
   if ($(e.currentTarget).attr('id') == sallyPosition) {
     $gameOver.show()
     $score.show()
+    $sally.remove()
+    $bently.remove()
     clearInterval(timerId)
     timerId = undefined}
 })
