@@ -6,9 +6,12 @@ Benny has forgotten his lunch box at home and his mom needs YOUR help to bring i
 
 ## How to Play
 
-Click on Benny as he appears.
-The score is hidden with infinite potentials until you click someone that's not Benny.
+- click on Benny as he appears.
+  ![Benny's Head](/images/bennyhead.png)
+- the score is hidden with infinite potentials until you click someone that's not Benny.
 
 ## Resources
 
-HTML, CSS, Javascript
+- HTML
+- CSS
+- Javascript
